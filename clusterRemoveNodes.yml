@@ -1,6 +1,6 @@
 ---
 
-- hosts: localhost
+- hosts: clusterNodes
   gather_facts: false
   become: true
   tasks:

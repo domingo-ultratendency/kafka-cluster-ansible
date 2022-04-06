@@ -20,7 +20,7 @@
       ansible.builtin.import_role:
         name: configure
 
-- hosts: localhost
+- hosts: clusterNodes
   become: false
   gather_facts: false
   tasks:
