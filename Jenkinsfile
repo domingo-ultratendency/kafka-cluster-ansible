@@ -14,11 +14,6 @@ pipeline {
                 ])
             }
         }
-        stage('Download Kafka source code') {
-            steps {
-                sh "wget https://dlcdn.apache.org/kafka/3.1.0/kafka_2.13-3.1.0.tgz"
-            }
-        }
         stage('Cluster Setup') {
             steps {
                 sh "ansible-playbook -i inventory/development/cluster.ini clusterSetup.yml"

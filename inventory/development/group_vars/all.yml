@@ -33,7 +33,7 @@ kafkaClusterName: development-kafka
 
 kafkaVersion: 3.1.0
 kafkaScalaVersion: 2.13
-kafkaTarLocation: "/var/jenkins_home/kafka-setup-pipeline/kafka_{{ kafkaScalaVersion }}-{{ kafkaVersion }}.tgz"
+kafkaTarLocation: "/tmp/kafka_{{ kafkaScalaVersion }}-{{ kafkaVersion }}.tgz"
 
 # below will be used while decommission/downgrade only
 kafkaOldVersion: 2.7.0
