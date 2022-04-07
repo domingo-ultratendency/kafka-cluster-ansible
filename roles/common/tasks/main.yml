@@ -12,7 +12,7 @@
 - name: System tuning tasks
   ansible.builtin.include_tasks: systemTuning.yml
 
-- name: Disable firewall
-  ansible.builtin.include_tasks: disableFirewall.yml
-  ignore_errors: true
-  when: not useSystemFirewall
+#- name: Disable firewall
+#  ansible.builtin.include_tasks: disableFirewall.yml
+#  ignore_errors: true
+#  when: not useSystemFirewall
