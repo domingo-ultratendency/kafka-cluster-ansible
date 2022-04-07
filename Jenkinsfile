@@ -14,13 +14,9 @@ pipeline {
                 ])
             }
         }
-        stage('Test') {
+        stage('Cluster Setup') {
             steps {
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                sh "ansible-playbook -i inventory/development/cluster.ini clusterSetup.yml"
             }
         }
     }
