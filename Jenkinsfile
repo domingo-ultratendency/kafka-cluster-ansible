@@ -19,5 +19,10 @@ pipeline {
                 sh "ansible-playbook -i inventory/development/cluster.ini clusterSetup.yml"
             }
         }
+        stage('Add nodes to Cluster') {
+            steps {
+                sh "ansible-playbook -i inventory/development/cluster.ini clusterAddNodes.yml"
+            }
+        }
     }
 }
